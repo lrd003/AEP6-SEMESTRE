@@ -6,7 +6,10 @@ Equipe de desenvolvimento:
 - Thiago Lopes Barcelos 
 
 Linguagem usada:
-- 
+- JavaScript
+--------------------------------------------------
+Framework:
+- React Native
 
 Ferramentas usadas:
 - Visual Code
