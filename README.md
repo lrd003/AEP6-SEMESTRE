@@ -7,7 +7,7 @@ Equipe de desenvolvimento:
 
 Linguagem usada:
 - JavaScript
---------------------------------------------------
+
 Framework:
 - React Native
 
@@ -19,4 +19,4 @@ Ferramentas usadas:
 - Discord
 - Astah
 - Protégé
-- 
+
