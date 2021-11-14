@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#apresentar_resultado_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#apresentar_resultado_de"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#gerar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#gerar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#informar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#informar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#possui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#possui"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#realizar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#realizar"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#analitico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#analitico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#relatorio"/>
+        <rdfs:comment xml:lang="pt">sub classe referente ao relátorio analítico</rdfs:comment>
+        <rdfs:label xml:lang="pt">Analítico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#calculo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#calculo">
+        <rdfs:comment xml:lang="pt">Classe referente a função de calculo do programa</rdfs:comment>
+        <rdfs:label xml:lang="pt">Calculo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#fixos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#fixos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#calculo"/>
+        <rdfs:comment xml:lang="pt">Sub classe referente aos valores fixos do calculo.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Valor Fixo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#pessoa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#pessoa">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#gerar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#relatorio"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#informar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#realizar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#calculo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="pt">Classe referente ao usuário do programa</rdfs:comment>
+        <rdfs:label xml:lang="pt">Usuário</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#relatorio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#relatorio">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#apresentar_resultado_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#calculo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="pt">Classe referente a função de relatório dos calculos do programa.</rdfs:comment>
+        <rdfs:label xml:lang="pt">Relatório</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#sintatico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#sintatico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#relatorio"/>
+        <rdfs:comment xml:lang="pt">sub classe referente ao relatório sintático</rdfs:comment>
+        <rdfs:label xml:lang="pt">Sintático</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#calculo"/>
+        <rdfs:comment xml:lang="pt">Sub classe referente aos valores a serem inseridos pelo usuário</rdfs:comment>
+        <rdfs:label xml:lang="pt">Variáveis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#NC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#NC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#calculo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#possui"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#fixos"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#possui"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#PF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#PF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#PRNT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#PRNT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#QC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#QC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#calculo"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#possui"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#fixos"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#possui"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#SC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#SC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#T -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#T">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#Va -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#Va">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#Ve -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#Ve">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lrdzao/ontologies/2021/10/untitled-ontology-5#variaveis"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
