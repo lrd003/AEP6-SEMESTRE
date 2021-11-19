@@ -8,3 +8,6 @@ Participantes:
 - Leonardo Rodrigues de Souza 
 - Tiago Lopes Barcelos
 
+Referencia:
+- https://github.com/callstack/react-native-paper-login-template
+
