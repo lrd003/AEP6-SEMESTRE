@@ -7,6 +7,7 @@ Equipe de desenvolvimento:
 
 Linguagem usada:
 - JavaScript
+- TypeScript
 
 Framework:
 - React Native
